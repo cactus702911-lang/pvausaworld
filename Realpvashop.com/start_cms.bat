@@ -1,6 +1,0 @@
-@echo off
-echo Starting CMS Server...
-echo Opening browser...
-start http://localhost:8080/admin.html
-powershell -ExecutionPolicy Bypass -File "cms_server.ps1"
-pause
