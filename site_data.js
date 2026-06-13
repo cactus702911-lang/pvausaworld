@@ -1,11 +1,11 @@
-﻿// site_data.js
+// site_data.js
 
 // --- Site Configuration (CMS Data) ---
 var siteConfig = {
     "siteTitle": "PVAUSAWorld",
     "metaDescription": "Elevate Your Online Business With Real Accounts. Get authentic reviews and secure, top-tier accounts delivered instantly for your digital success.\n",
     "logoText": "PVAUSAWorld",
-    "logoBadge": " ðŸ”¥",
+    "logoBadge": "",
     "heroWelcome": "Welcome To",
     "heroTitle": "PVAUSAWorld <span class='text-2xl font-semibold'>.com</span>",
     "heroSubtitle": "Premium Verified Accounts & Digital Marketing Solutions",
