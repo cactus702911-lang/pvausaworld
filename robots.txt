@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pvausaworld.com/sitemap.xml

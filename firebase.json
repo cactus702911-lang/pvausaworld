@@ -1,0 +1,66 @@
+{
+  "hosting": {
+    "site": "pvausaworld",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/node_modules/**",
+      "build_site.js",
+      "site_template.html",
+      "product_template.html",
+      "header_partial.html",
+      "convert_images.js",
+      "cms_server.ps1",
+      "start_cms.bat",
+      "admin.html",
+      "temp_review.json",
+      "input.css",
+      "tailwind.config.js",
+      "package.json",
+      "package-lock.json",
+      ".htaccess",
+      "CNAME",
+      "_redirects",
+      "vercel.json",
+      ".vercelignore",
+      ".gitignore",
+      ".nojekyll",
+      ".vercel/**",
+      ".vscode/**",
+      ".git/**",
+      ".github/**",
+      "empty_redirect/**"
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|ico)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=300"
+          }
+        ]
+      }
+    ],
+    "cleanUrls": true,
+    "trailingSlash": true
+  }
+}

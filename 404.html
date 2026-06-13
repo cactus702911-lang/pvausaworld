@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B1120">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any" id="favicon-link">
+    <link rel="preload" href="favicon.svg" as="image" fetchpriority="high" id="favicon-preload">
+    <title>Loading... - pvausaworld</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Calculate app root path dynamically (supporting domain root, subdirectory like GitHub Pages, and local files)
+        let appRootPath = '/';
+        if (window.location.protocol === 'file:') {
+            appRootPath = './';
+        } else {
+            const parts = window.location.pathname.split('/').filter(Boolean);
+            const knownRoots = ['product', 'category', 'blog', 'sitemap.html', 'admin.html', 'index.html'];
+            if (parts.length > 0) {
+                const first = parts[0].toLowerCase();
+                if (!knownRoots.includes(first) && !first.endsWith('.html')) {
+                    appRootPath = '/' + parts[0] + '/';
+                }
+            }
+        }
+        window.appRootPath = appRootPath;
+
+        // Set favicons/preloads dynamically
+        document.addEventListener('DOMContentLoaded', () => {
+            const favicon = document.getElementById('favicon-link');
+            if (favicon) favicon.href = appRootPath + 'favicon.svg';
+            const preload = document.getElementById('favicon-preload');
+            if (preload) preload.href = appRootPath + 'favicon.svg';
+            const homeBtn = document.querySelector('#error-ui a');
+            if (homeBtn) homeBtn.href = appRootPath;
+        });
+
+        // Load site_data.js dynamically
+        document.write('<script src="' + appRootPath + 'site_data.js?v=' + Date.now() + '"><\/script>');
+    </script>
+    <script>
+        // Dynamic Routing Logic for GitHub Pages
+        (function() {
+            const path = window.location.pathname;
+            const siteConfig = window.siteConfig || {};
+            const paths = siteConfig.pathConfig || { product: 'product', category: 'category', blog: 'blog' };
+            const rootPath = window.appRootPath || '/';
+            
+            // Helper: Find item by slug in a list
+            const findBySlug = (list, slug) => list ? list.find(item => item.slug === slug) : null;
+
+            let targetUrl = null;
+
+            // Check if it's a valid product slug that just hasn't been built yet
+            if (path.includes(`/${paths.product}/`)) {
+                const slugPart = path.split(`/${paths.product}/`)[1];
+                if (slugPart) {
+                    const slug = slugPart.replace(/\/+$/, '');
+                    if (findBySlug(window.products, slug)) {
+                        // It's a valid product! Redirect to homepage with redirect params
+                        targetUrl = rootPath + '?p=' + encodeURIComponent(path);
+                    }
+                }
+            } 
+            else if (path.includes(`/${paths.category}/`)) {
+                const slugPart = path.split(`/${paths.category}/`)[1];
+                if (slugPart) {
+                    const slug = slugPart.replace(/\/+$/, '');
+                    if (findBySlug(window.categories, slug)) {
+                        targetUrl = rootPath + '?c=' + encodeURIComponent(path);
+                    }
+                }
+            }
+
+            if (targetUrl) {
+                window.location.replace(targetUrl);
+            } else {
+                // Not a valid dynamic path, show the actual 404 UI
+                document.addEventListener('DOMContentLoaded', () => {
+                    document.getElementById('error-ui').classList.remove('hidden');
+                    document.getElementById('loading-ui').classList.add('hidden');
+                });
+            }
+        })();
+    </script>
+    <style>
+        body { background-color: #0B1120; color: #e2e8f0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        .premium-glow { position: absolute; width: 100%; height: 100%; background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.15), transparent 70%); pointer-events: none; top: 0; left: 0; z-index: -1; }
+    </style>
+</head>
+<body class="bg-[#0B1120] text-slate-200 min-h-screen flex flex-col items-center justify-center text-center p-4">
+    <div class="premium-glow"></div>
+    
+    <div id="loading-ui" class="flex flex-col items-center">
+         <div class="w-12 h-12 border-4 border-emerald-500/20 border-t-emerald-500 rounded-full animate-spin mb-4"></div>
+        <p class="text-slate-400 animate-pulse">Loading content...</p>
+    </div>
+
+    <div id="error-ui" class="hidden">
+        <h1 class="text-6xl font-bold text-emerald-400 mb-4">404</h1>
+        <h2 class="text-2xl font-semibold text-white mb-6">Page Not Found</h2>
+        <p class="text-slate-400 mb-8 max-w-md">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        <a href="/" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg shadow-emerald-500/20">
+            Go to Homepage
+        </a>
+    </div>
+</body>
+</html>

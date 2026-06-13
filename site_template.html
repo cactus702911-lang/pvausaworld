@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B1120">
+    <link rel="icon" type="image/png" href="{{FAVICON_URL}}" sizes="any">
+
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    {{PRODUCT_IMAGE_PRELOAD}}
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://unpkg.com/lucide@latest" as="script" crossorigin>
+    
+    <title>{{SITE_TITLE}}</title>
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <link rel="canonical" href="{{CANONICAL_URL}}" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{CANONICAL_URL}}">
+    <meta property="og:title" content="{{SITE_TITLE}}">
+    <meta property="og:description" content="{{META_DESCRIPTION}}">
+    <meta property="og:image" content="{{LOGO_URL}}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{CANONICAL_URL}}">
+    <meta property="twitter:title" content="{{SITE_TITLE}}">
+    <meta property="twitter:description" content="{{META_DESCRIPTION}}">
+    <meta property="twitter:image" content="{{LOGO_URL}}">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{SITE_NAME}}",
+      "url": "https://pvausaworld.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://pvausaworld.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <style>
+        /* Critical CSS to prevent FOUC */
+        body { 
+            background-color: #f8fafc; 
+            color: #334155; 
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-display: swap;
+        }
+        
+        /* Layout Skeleton */
+        .max-w-7xl { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+        .flex { display: flex; }
+        .items-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+        .h-16 { height: 4rem; }
+        .font-bold { font-weight: 700; }
+        .text-white { color: #0f172a; } /* Light theme override */
+        .min-h-screen { min-height: 100vh; }
+        .hidden { display: none; }
+        
+        /* Header Critical */
+        header { position: sticky; top: 0; z-index: 50; background-color: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+
+        .premium-glow { position: absolute; width: 100%; height: 100%; background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.15), transparent 70%); pointer-events: none; top: 0; left: 0; z-index: -1; }
+
+        /* Appearance fixes */
+        select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+        
+        /* Line clamp compatibility */
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Robust Navigation Visibility */
+        .desktop-nav-container { display: none !important; }
+        .mobile-menu-btn-container { display: block !important; }
+        .mobile-menu-backdrop-container { display: none; }
+        .mobile-menu-sidebar-container { display: none; }
+
+        @media (min-width: 768px) {
+            .desktop-nav-container { display: flex !important; }
+            .mobile-menu-btn-container { display: none !important; }
+            .mobile-menu-backdrop-container { display: none !important; }
+            .mobile-menu-sidebar-container { display: none !important; }
+        }
+
+        /* Dropdown Robustness */
+        .desktop-nav-container .group:hover .group-hover\:block {
+            display: block !important;
+        }
+        .desktop-nav-container .group .absolute {
+            z-index: 100 !important;
+            pointer-events: auto !important;
+        }
+        /* Bridge the gap between button and dropdown to prevent flickering */
+        .desktop-nav-container .group .absolute::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: transparent;
+        }
+    </style>
+
+    <!-- Critical CSS (Inlined for Mobile Speed) -->
+    {{CRITICAL_CSS}}
+    
+    <!-- Defer Non-Critical CSS/JS -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <style>
+        /* Premium Glow Effects */
+        .premium-glow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.15), transparent 70%);
+            pointer-events: none;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
+        }
+        .card-glow:hover {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+        /* Hero Background Animation */
+        /* Hero Section - Full Background Image */
+        .hero-section-bg {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        .hero-section-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('{{FAVICON_URL_BASE}}images/hero-image.webp');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            animation: zoomBg 20s infinite alternate ease-in-out;
+            z-index: 0;
+        }
+        .blog-hero-section-bg {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        .blog-hero-section-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('{{FAVICON_URL_BASE}}images/blog-hero-image.webp');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            animation: zoomBg 20s infinite alternate ease-in-out;
+            z-index: 0;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(2,6,23,0.78) 0%, rgba(3,15,40,0.75) 50%, rgba(1,10,28,0.80) 100%);
+            z-index: 1;
+        }
+        .blog-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(2,6,23,0.55) 0%, rgba(3,15,40,0.50) 50%, rgba(1,10,28,0.58) 100%);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        @keyframes zoomBg {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        .hero-img-wrapper img {
+            border-radius: 1.5rem;
+            box-shadow: 0 25px 60px rgba(16, 185, 129, 0.18), 0 8px 32px rgba(16, 185, 129, 0.15);
+            border: 2px solid rgba(16, 185, 129, 0.25);
+            animation: heroFloat 6s ease-in-out infinite alternate;
+        }
+        @keyframes heroFloat {
+            0% { transform: translateY(0px) rotate(0.5deg); }
+            100% { transform: translateY(-14px) rotate(-0.5deg); }
+        }
+        /* Custom Premium Dark Footer Styles */
+        .site-footer {
+            background-color: #0b0f19 !important;
+            border-top: 1px solid #1e293b !important;
+        }
+        .site-footer h4 {
+            color: #f1f5f9 !important;
+        }
+        .site-footer p {
+            color: #94a3b8 !important;
+        }
+        .site-footer a {
+            color: #94a3b8 !important;
+        }
+        .site-footer a:hover {
+            color: #10b981 !important;
+        }
+        .site-footer .border-t {
+            border-color: #1e293b !important;
+        }
+        .site-footer .text-slate-500 {
+            color: #94a3b8 !important;
+        }
+        .site-footer .text-slate-600 {
+            color: #94a3b8 !important;
+        }
+    </style>
+    <!-- Google Analytics (GA4) - Add dynamically from admin -->
+    {{ANALYTICS_SCRIPT}}
+</head>
+<body class="bg-slate-50 min-h-screen font-sans text-base text-slate-700 selection:bg-emerald-500 selection:text-white overflow-x-hidden">
+
+    <div class="premium-glow"></div>
+
+    {{HEADER}}
+
+    <main>
+    <!-- Hero Section -->
+    <section class="relative bg-white pt-10 pb-16 overflow-hidden">
+        <div class="absolute inset-0 bg-[#00a651] z-0">
+            <img src="{{FAVICON_URL_BASE}}images/smmtopper/hero_bg_no_text.png" alt="Background" class="w-full h-full object-cover mix-blend-overlay opacity-50" />
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center mt-8 mb-12">
+            <h1 class="text-white text-5xl md:text-7xl font-bold tracking-tight mb-2 drop-shadow-lg" style="font-family: 'Brush Script MT', cursive, sans-serif;">{{HERO_WELCOME}}</h1>
+            <h2 class="text-white text-4xl md:text-6xl font-black mb-4 drop-shadow-md">{{HERO_TITLE}}</h2>
+            <p class="text-white text-lg md:text-xl font-medium tracking-widest drop-shadow-md">{{HERO_SUBTITLE}}</p>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section id="products-section" class="py-12 bg-white">
+        <div class="max-w-[1200px] mx-auto px-4">
+            {{PRODUCT_GRID}}
+        </div>
+    </section>
+
+    <!-- Top Quality SMM Services -->
+    <section class="py-16 bg-[#00a651] overflow-hidden">
+        <div class="max-w-[1200px] mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="w-full md:w-1/2 text-white">
+                    <span class="text-lg font-semibold block mb-2">Verified Accounts Marketplace</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Elevate Your Digital Presence</h2>
+                    <p class="text-lg mb-8 opacity-90 leading-relaxed">
+                        Scaling your business requires reliable tools. We provide premium, fully verified social media and professional accounts ready for instant use. Skip the phone verification hurdles and start growing your brand today.
+                    </p>
+                    <a href="{{FAVICON_URL_BASE}}#products-section" class="inline-block bg-white text-[#00a651] font-bold py-3 px-8 rounded hover:bg-slate-100 transition-colors shadow-md hover:shadow-lg">
+                        Explore Our Catalog
+                    </a>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="{{FAVICON_URL_BASE}}images/smmtopper/community-team-teamwork-3245739.png" alt="Teamwork" class="max-w-full h-auto drop-shadow-xl" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Always Deliver More Than Expected -->
+    <section class="py-20 bg-white">
+        <div class="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-5/12 flex justify-center md:justify-end">
+                <img src="{{FAVICON_URL_BASE}}images/smmtopper/achievement-idea-stairs-4548538.png" alt="Stairs to success" class="max-w-[300px] h-auto" />
+            </div>
+            <div class="w-full md:w-7/12">
+                <span class="text-[#00a651] text-sm font-bold uppercase tracking-wider block mb-2">Our Commitment</span>
+                <h2 class="text-4xl font-bold text-[#1a1a1a] mb-6">Quality Accounts That Drive Real Results</h2>
+                <p class="text-gray-600 mb-10 leading-relaxed">
+                    In the fast-paced world of digital marketing, stability is everything. Unlike cheap alternatives that get banned overnight, our aged and verified profiles are meticulously cultivated for long-term reliability. We focus on providing authentic, high-trust accounts that seamlessly integrate into your workflow, ensuring your business operations never miss a beat.
+                </p>
+                <div class="flex gap-12">
+                    <div>
+                        <div class="text-3xl font-black text-[#1a1a1a] flex items-start gap-1">
+                            15 <span class="text-lg mt-1">K+</span>
+                        </div>
+                        <div class="text-xs text-gray-500 uppercase tracking-widest mt-1">Orders Completed</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-black text-[#1a1a1a] flex items-start gap-1">
+                            4.9 <span class="text-lg mt-1">★</span>
+                        </div>
+                        <div class="text-xs text-gray-500 uppercase tracking-widest mt-1">Average Rating</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-black text-[#1a1a1a] flex items-start gap-1">
+                            99 <span class="text-lg mt-1">%</span>
+                        </div>
+                        <div class="text-xs text-gray-500 uppercase tracking-widest mt-1">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="relative py-20 bg-[#00a651] overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-40 mix-blend-multiply">
+            <img src="{{FAVICON_URL_BASE}}images/smmtopper/money-home-coin-2724238-1024x570-1.jpg" alt="Background" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative z-10 max-w-[1200px] mx-auto px-4">
+            <h2 class="text-4xl text-white font-medium text-center md:text-left mb-16" style="font-family: 'Georgia', serif;">Why Marketers Choose Us</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+                    <div class="text-white">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="shield-check" class="w-8 h-8 opacity-80"></i>
+                            <h3 class="text-xl font-bold">Secure & Verified</h3>
+                        </div>
+                        <p class="text-sm opacity-90 leading-relaxed pl-11">Every account is phone-verified (PVA) using unique IP addresses to ensure maximum safety and prevent unexpected bans.</p>
+                    </div>
+                    <div class="text-white">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="zap" class="w-8 h-8 opacity-80"></i>
+                            <h3 class="text-xl font-bold">Instant Delivery</h3>
+                        </div>
+                        <p class="text-sm opacity-90 leading-relaxed pl-11">Get immediate access to your purchased profiles and services. Your credentials are securely delivered straight to your inbox.</p>
+                    </div>
+                    <div class="text-white">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="headphones" class="w-8 h-8 opacity-80"></i>
+                            <h3 class="text-xl font-bold">24/7 Expert Support</h3>
+                        </div>
+                        <p class="text-sm opacity-90 leading-relaxed pl-11">Our dedicated team is always online to assist you with account setup, custom orders, or instant replacements if needed.</p>
+                    </div>
+                    <div class="text-white">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="trending-up" class="w-8 h-8 opacity-80"></i>
+                            <h3 class="text-xl font-bold">Aged Profiles</h3>
+                        </div>
+                        <p class="text-sm opacity-90 leading-relaxed pl-11">We offer aged accounts with established history, providing higher trust scores for Google Ads, social media marketing, and outreach.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="{{FAVICON_URL_BASE}}images/smmtopper/startup-business-people.jpg" alt="Team working" class="rounded-lg shadow-2xl w-full" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Quality Services -->
+    <section class="py-20 bg-white">
+        <div class="max-w-[1200px] mx-auto px-4">
+            <h2 class="text-2xl font-light text-[#1a1a1a] text-center md:text-left mb-12">High-Trust Marketing Assets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {{HIGH_TRUST_ASSETS}}
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Love -->
+    <section class="py-16 bg-[#f8f9fa]">
+        <div class="max-w-[1200px] mx-auto px-4">
+            <div class="bg-[#00a651] text-white py-4 px-8 flex justify-between items-center rounded-t-lg">
+                <h2 class="text-xl font-bold flex items-center gap-2">
+                    <div class="w-1 h-6 bg-white"></div>
+                    Clients <span class="font-normal">Love</span>
+                </h2>
+                <div class="text-xs uppercase tracking-widest font-semibold text-white/80">Testimonials</div>
+            </div>
+            
+            <div class="bg-white rounded-b-lg shadow-sm border border-gray-100 p-8 pt-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white border border-gray-100 rounded shadow-md p-8 flex flex-col relative">
+                        <div class="flex text-yellow-400 mb-6 gap-1">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-8 flex-grow">
+                            "The aged Google accounts I purchased here have completely transformed our cold outreach campaigns. Zero suspensions and fantastic inbox placement. Customer support was incredibly responsive when I had setup questions."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="{{FAVICON_URL_BASE}}images/smmtopper/team_6.jpg" alt="Avatar" class="w-12 h-12 rounded-full object-cover shadow" />
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Hasan Mahmud</h4>
+                                <div class="text-xs text-gray-400">Digital Agency Owner</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white border border-gray-100 rounded shadow-md p-8 flex flex-col relative transform md:-translate-y-4 shadow-xl border-[#00a651]/20">
+                        <div class="flex text-yellow-400 mb-6 gap-1">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-8 flex-grow">
+                            "Finding reliable verified accounts has always been a struggle for our agency until we found PVAUSAWorld. The credentials are delivered instantly and the profiles are highly stable for our client ad campaigns."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="{{FAVICON_URL_BASE}}images/smmtopper/pexels-photo-1024311-1.jpeg" alt="Avatar" class="w-12 h-12 rounded-full object-cover shadow" />
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Rubina N. Shany</h4>
+                                <div class="text-xs text-gray-400">Growth Marketing Director</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white border border-gray-100 rounded shadow-md p-8 flex flex-col relative">
+                        <div class="flex text-yellow-400 mb-6 gap-1">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-8 flex-grow">
+                            "Absolutely top-tier service. I needed bulk social media profiles for market testing, and they delivered perfectly aged accounts at a fair price. Their replacement guarantee gave me total peace of mind. Highly recommended!"
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="{{FAVICON_URL_BASE}}images/smmtopper/pexels-photo-1300402.jpeg" alt="Avatar" class="w-12 h-12 rounded-full object-cover shadow" />
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Ayo J. Franks</h4>
+                                <div class="text-xs text-gray-400">SEO & Outreach Specialist</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center mt-8 gap-2">
+                    <div class="w-2.5 h-2.5 rounded-full bg-[#00a651]"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-gray-200"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{LATEST_ARTICLES}}
+    </main>
+
+    <footer class="site-footer bg-[#0b0f19] border-t border-slate-800 py-12 mt-12">
+        {{FOOTER}}
+    </footer>
+
+    <!-- Contact Support Modal -->
+    <div id="contact-popup" class="fixed inset-0 z-[9999] hidden" style="z-index:2147483647" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-md transition-opacity opacity-0 pointer-events-none" id="popup-backdrop" onclick="closePopup()"></div>
+        
+        <!-- Centered Container -->
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto pointer-events-none">
+            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+                <!-- Modal Panel -->
+                <div class="relative transform overflow-hidden rounded-2xl bg-white border border-slate-200 text-left shadow-2xl transition-all w-full max-w-md opacity-0 scale-95 pointer-events-auto" id="popup-panel">
+                    
+                    <!-- Header with Gradient -->
+                    <div class="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-6 sm:px-8">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-2xl font-bold text-white flex items-center gap-2" id="modal-title">
+                                <i data-lucide="message-circle" class="h-6 w-6"></i> {{POPUP_TITLE}}
+                            </h3>
+                            <button type="button" class="rounded-full bg-white/20 p-1.5 text-white hover:bg-white/40 focus:outline-none focus:ring-2 focus:ring-white transition-colors" onclick="closePopup()" aria-label="Close modal">
+                                <i data-lucide="x" class="h-5 w-5"></i>
+                            </button>
+                        </div>
+                        <p class="mt-2 text-emerald-100 text-sm font-medium">{{POPUP_MESSAGE}}</p>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="px-6 py-8 sm:px-8 space-y-4 bg-white">
+                        <a href="{{WHATSAPP_LINK}}" id="popup-whatsapp" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between w-full p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-green-500/50 hover:bg-slate-100 transition-all shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                                    <i data-lucide="phone" class="w-6 h-6 text-green-600"></i>
+                                </div>
+                                <div class="text-left">
+                                    <h4 class="text-slate-900 font-bold">WhatsApp</h4>
+                                    <p class="text-slate-500 text-xs" id="popup-whatsapp-number">{{WHATSAPP}}</p>
+                                </div>
+                            </div>
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-slate-400 group-hover:text-green-500 transition-colors"></i>
+                        </a>
+
+                        <a href="{{TELEGRAM_LINK}}" id="popup-telegram" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between w-full p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-emerald-500/50 hover:bg-slate-100 transition-all shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center group-hover:bg-emerald-200 transition-colors">
+                                    <i data-lucide="send" class="w-6 h-6 text-emerald-600"></i>
+                                </div>
+                                <div class="text-left">
+                                    <h4 class="text-slate-900 font-bold">Telegram</h4>
+                                    <p class="text-slate-500 text-xs" id="popup-telegram-username">@{{TELEGRAM}}</p>
+                                </div>
+                            </div>
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-slate-400 group-hover:text-emerald-500 transition-colors"></i>
+                        </a>
+
+                        <a href="mailto:{{SUPPORT_EMAIL}}" id="popup-email" class="group flex items-center justify-between w-full p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-emerald-500/50 hover:bg-slate-100 transition-all shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center group-hover:bg-emerald-200 transition-colors">
+                                    <i data-lucide="mail" class="w-6 h-6 text-emerald-600"></i>
+                                </div>
+                                <div class="text-left">
+                                    <h4 class="text-slate-900 font-bold">Email</h4>
+                                    <p class="text-slate-500 text-xs">{{SUPPORT_EMAIL}}</p>
+                                </div>
+                            </div>
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-slate-400 group-hover:text-emerald-500 transition-colors"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Defer Non-Critical Assets -->
+    <script>
+        (function () {
+            const prefix = '{{DEFER_PREFIX}}';
+            const v = Date.now();
+            const loadScript = (src, onLoad, onError) => {
+                const s = document.createElement('script');
+                s.src = src;
+                if (onLoad) s.onload = onLoad;
+                if (onError) s.onerror = onError;
+                document.head.appendChild(s);
+            };
+            loadScript(prefix + 'site_data.js?v=' + v, () => {
+                loadScript(prefix + 'ui.js?v=' + v, null, () => loadScript(prefix + 'ui.js'));
+            }, () => {
+                loadScript(prefix + 'site_data.js', () => loadScript(prefix + 'ui.js'), () => loadScript(prefix + 'ui.js'));
+            });
+        })();
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
