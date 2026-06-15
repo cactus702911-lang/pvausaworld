@@ -1,4 +1,4 @@
-﻿// site_data.js
+// site_data.js
 
 // --- Site Configuration (CMS Data) ---
 var siteConfig = {
@@ -120,17 +120,20 @@ var products = [
         "max_price": 19.99,
         "badge_color": "blue",
         "is_sale": true,
-        "short_description": "Short description here.",
-        "meta_description": "",
+        "short_description": "Purchase 100% verified and active Edu mail accounts to unlock premium student discounts, software access, and exclusive academic benefits. Secure, reliable, and ready for immediate use.",
+        "meta_description": "Looking to buy Edu mail accounts? We provide high-quality, verified .edu email addresses for students and professionals. Unlock exclusive student discounts and benefits today.",
         "features": [
-            "Feature 1",
-            "Feature 2"
+            "Verified .edu Addresses: Authentic university emails to ensure premium access.",
+            "Exclusive Student Discounts: Unlock offers on Apple, Amazon Prime, Spotify, and more.",
+            "Premium Software Access: Free or discounted access to GitHub, Office 365, and Adobe.",
+            "Instant Delivery: Fast and secure delivery with complete login credentials.",
+            "Guaranteed Replacement: Dedicated support for any login issues."
         ],
         "pricing": [
             "$10 - Option 1",
             "$20 - Option 2"
         ],
-        "long_description": "<p>Detailed description...</p>",
+        "long_description": "<h2>Why Buy Edu Mail Accounts?</h2><p>An educational email address (.edu) is more than just a communication tool; it is a gateway to hundreds of premium student discounts and free software services. By choosing to <strong>buy Edu mail accounts</strong>, professionals and students alike can significantly reduce their digital expenses and gain access to top-tier academic resources.</p><h3>Unlocking Premium Benefits</h3><p>Our verified .edu emails are sourced securely and are recognized by major platforms. Whether you are looking for discounts on Amazon Prime, Spotify, Apple Music, or need access to the <strong>GitHub Student Developer Pack</strong> and Microsoft Office 365, these accounts deliver unmatched value. You get to enjoy all the perks of being a student without the heavy tuition fees.</p><h3>Why Choose Us?</h3><ul><li><strong>Expertise & Trust:</strong> We specialize in providing authentic digital assets with a proven track record. Each Edu email is thoroughly tested to ensure it works seamlessly across top platforms.</li><li><strong>Authority:</strong> Our accounts have a high success rate for redeeming student offers, making us a trusted provider in the industry.</li><li><strong>Reliability:</strong> We prioritize your security. Every account comes with a fresh password and recovery options to keep your access safe.</li></ul><h3>How to Maximize Your Edu Mail</h3><p>To get the most out of your purchase, we recommend signing up for your desired services immediately upon receiving your login details. Be sure to check our other premium <a href=\"/category/mail-account\">Mail Accounts</a> for more options. Following best practices ensures your account remains active and your discounts stay valid.</p><h3>Frequently Asked Questions</h3><p><strong>Q: Will I get access to Google Drive or Office 365?</strong><br>A: Yes, many of our .edu emails grant access to essential academic software suites like Office 365 and educational cloud storage benefits.</p><p><strong>Q: How fast is the delivery?</strong><br>A: Delivery is almost instant upon completing your purchase. You will receive all necessary credentials securely.</p>",
         "related_ids": []
     },
     {
@@ -146,17 +149,20 @@ var products = [
         "max_price": 19.99,
         "badge_color": "blue",
         "is_sale": true,
-        "short_description": "Short description here.",
-        "meta_description": "",
+        "short_description": "Purchase aged and phone-verified Gmail accounts with high trust scores. Perfect for digital marketing, business communication, and accessing Google services seamlessly. Guaranteed secure and ready for immediate use.",
+        "meta_description": "Looking to buy old Gmail accounts? We provide aged, 100% phone-verified, and secure Google accounts tailored for business needs. Instant delivery.",
         "features": [
-            "Feature 1",
-            "Feature 2"
+            "Aged & Established: 1 to 5+ years old accounts for higher trust.",
+            "100% Phone Verified (PVA): Authenticated with unique IP addresses.",
+            "Instant Access: Delivered immediately with full login & recovery details.",
+            "Secure & Private: Maintained following strict security protocols.",
+            "24/7 Support: Dedicated assistance for a smooth experience."
         ],
         "pricing": [
             "$10 - Option 1",
             "$20 - Option 2"
         ],
-        "long_description": "<p>Detailed description...</p>",
+        "long_description": "<h2>Why Buy Old Gmail Accounts?</h2><p>When it comes to digital marketing, business communications, or expanding your online presence, having reliable email accounts is crucial. Purchasing <strong>aged Gmail accounts</strong> provides an immediate advantage because older accounts inherently carry higher trust scores and authority with Google's algorithms compared to freshly created ones.</p><h3>The Importance of Aged and Phone Verified (PVA) Accounts</h3><p>Our old Gmail accounts are 100% Phone Verified (PVA) and established using unique residential IPs. This ensures they meet the highest standards of quality, reducing the likelihood of bans or restrictions. Whether you are running Google Ads, managing multiple social media profiles, or conducting outreach campaigns, these accounts are engineered for durability.</p><h3>Key Benefits for Your Business</h3><ul><li><strong>Expertise & Trust:</strong> We have years of experience in providing secure digital assets. Each account undergoes rigorous quality assurance before delivery.</li><li><strong>Authority:</strong> Aged accounts are less likely to trigger spam filters, giving your emails a higher inbox delivery rate.</li><li><strong>Security:</strong> You receive complete ownership, including recovery emails and passwords, ensuring your data remains private and secure.</li></ul><h3>How to Use Your Aged Gmail Accounts Effectively</h3><p>To maintain the health of your accounts, we recommend logging in using consistent IP addresses and avoiding aggressive spamming activities. For further account management strategies, check out our full range of <a href=\"/category/google\">Google Accounts</a> for specialized needs.</p><h3>Frequently Asked Questions</h3><p><strong>Q: How old are these accounts?</strong><br>A: We offer accounts ranging from 1 to 5+ years old, fully aged and warmed up.</p><p><strong>Q: Are these accounts safe from suspension?</strong><br>A: While no account is entirely immune to Google's policy changes, our aged PVA accounts have a significantly higher survival rate when used following standard guidelines.</p>",
         "related_ids": []
     },
     {
