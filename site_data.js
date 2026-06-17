@@ -1,4 +1,4 @@
-// site_data.js
+﻿// site_data.js
 
 // --- Site Configuration (CMS Data) ---
 var siteConfig = {
@@ -56,7 +56,9 @@ var categories = [
         "content": "<p><br></p>",
         "items": [
             "Cash App Accounts",
-            "Buy Verified Wise Accounts"
+            "Buy Verified Wise Accounts",
+            "Cashapp accounts ",
+            "Binance accounts verified ready to use"
         ]
     },
     {
@@ -107,6 +109,58 @@ var landingPageData = {
 
 // All 41 Products Data
 var products = [
+    {
+        "id": 31,
+        "active": true,
+        "title": "Binance accounts verified ready to use",
+        "display_title": "",
+        "slug": "binance-accounts-verified-ready-to-use",
+        "category": "Bank & Crypto",
+        "image": "",
+        "image_title": "Cashapp accounts verified ready to use",
+        "min_price": 9.99,
+        "max_price": 19.99,
+        "badge_color": "blue",
+        "is_sale": true,
+        "short_description": "Short description here.",
+        "meta_description": "",
+        "features": [
+            "Feature 1",
+            "Feature 2"
+        ],
+        "pricing": [
+            "$10 - Option 1",
+            "$20 - Option 2"
+        ],
+        "long_description": "<p>Detailed description...</p>",
+        "related_ids": []
+    },
+    {
+        "id": 30,
+        "active": true,
+        "title": "Cashapp accounts verified ready to use",
+        "display_title": "Cashapp accounts ",
+        "slug": "cashapp-accounts-verified-ready-to-testing-use-profiles",
+        "category": "Bank & Crypto",
+        "image": "",
+        "image_title": "",
+        "min_price": 9.99,
+        "max_price": 19.99,
+        "badge_color": "blue",
+        "is_sale": true,
+        "short_description": "Short description here.",
+        "meta_description": "",
+        "features": [
+            "Feature 1",
+            "Feature 2"
+        ],
+        "pricing": [
+            "$10 - Option 1",
+            "$20 - Option 2"
+        ],
+        "long_description": "<p>Detailed description...</p>",
+        "related_ids": []
+    },
     {
         "id": 29,
         "active": true,
