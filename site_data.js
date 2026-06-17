@@ -1,4 +1,4 @@
-﻿// site_data.js
+// site_data.js
 
 // --- Site Configuration (CMS Data) ---
 var siteConfig = {
@@ -46,7 +46,8 @@ var categories = [
             "Old Gmail Account",
             "Buy GitHub Account",
             "Buy Old Gmail Accounts",
-            "Buy Edu Mail Accounts"
+            "Buy Edu Mail Accounts",
+            "WeChat Account"
         ]
     },
     {
@@ -57,17 +58,8 @@ var categories = [
         "items": [
             "Cash App Accounts",
             "Buy Verified Wise Accounts",
-            "Cashapp accounts ",
-            "Binance accounts verified ready to use"
-        ]
-    },
-    {
-        "name": "Accounts",
-        "slug": "accounts",
-        "description": "Verified social media and developer accounts for Instagram, Twitter, Tinder, and GitHub.",
-        "content": "\n            <h2 class=\"text-3xl font-bold text-white mb-6\">Premium Verified Accounts for Every Platform</h2>\n            <p class=\"text-slate-300 mb-4 text-lg\">\n                In the digital age, access is everything. Whether you're a developer needing a **GitHub** account, a marketer targeting **Instagram** and **Twitter**, or exploring niche platforms like **Tinder**, \n                having a verified, ready-to-use account saves you time and hassle.\n            </p>\n            <p class=\"text-slate-300 mb-8 text-lg\">\n                **pvausaworld** is your one-stop marketplace for high-quality PVA (Phone Verified Accounts). We take care of the verification process so you can focus on what matters?your business.\n            </p>\n\n            <h3 class=\"text-2xl font-bold text-white mb-4\">Why Buy Verified Accounts?</h3>\n            <div class=\"grid grid-cols-1 md:grid-cols-3 gap-6 mb-8\">\n                <div class=\"bg-[#1E293B] p-5 rounded-xl text-center\">\n                    <i data-lucide=\"shield-check\" class=\"w-10 h-10 text-green-400 mx-auto mb-3\"></i>\n                    <h4 class=\"font-bold text-white mb-2\">Instant Access</h4>\n                    <p class=\"text-slate-400 text-sm\">Skip the sign-up and verification delays. Get credentials instantly.</p>\n                </div>\n                <div class=\"bg-[#1E293B] p-5 rounded-xl text-center\">\n                    <i data-lucide=\"globe\" class=\"w-10 h-10 text-emerald-400 mx-auto mb-3\"></i>\n                    <h4 class=\"font-bold text-white mb-2\">Global Reach</h4>\n                    <p class=\"text-slate-400 text-sm\">Accounts available from USA, UK, EU, and other top tier regions.</p>\n                </div>\n                <div class=\"bg-[#1E293B] p-5 rounded-xl text-center\">\n                    <i data-lucide=\"lock\" class=\"w-10 h-10 text-emerald-400 mx-auto mb-3\"></i>\n                    <h4 class=\"font-bold text-white mb-2\">Ban Resistant</h4>\n                    <p class=\"text-slate-400 text-sm\">Created with unique IPs and device fingerprints for maximum safety.</p>\n                </div>\n            </div>\n\n            <h3 class=\"text-2xl font-bold text-white mb-4\">Popular Account Categories</h3>\n            <ul class=\"list-disc pl-5 space-y-3 mb-8 text-slate-300\">\n                <li><strong>Instagram Accounts:</strong> Perfect for influencer marketing and brand flipping.</li>\n                <li><strong>Twitter (X) Accounts:</strong> Essential for crypto projects and news dissemination.</li>\n                <li><strong>GitHub Accounts:</strong> Aged accounts for developers to host repositories with trust.</li>\n                <li><strong>Tinder Accounts:</strong> Verified profiles for dating app marketing.</li>\n            </ul>\n\n            <p class=\"text-slate-300\">\n                Don't let verification hurdles slow you down. Browse our diverse catalog of verified accounts below and get started today.\n            </p>\n        ",
-        "items": [
-            "Tinder Account"
+            " Binance accounts",
+            "Cashapp accounts "
         ]
     },
     {
@@ -80,6 +72,13 @@ var categories = [
             "Trustpilot Reviews",
             "Buy Amazon Reviews"
         ]
+    },
+    {
+        "name": "Social account",
+        "slug": "social-account",
+        "description": "",
+        "content": "<p><br></p>",
+        "items": []
     }
 ];
 
@@ -110,10 +109,39 @@ var landingPageData = {
 // All 41 Products Data
 var products = [
     {
+        "id": 32,
+        "active": true,
+        "title": "Buy Verified WeChat Account",
+        "display_title": "WeChat Account",
+        "slug": "safe-and-relaible-wechat-account-for-testing",
+        "category": "Mail account",
+        "image": "",
+        "image_title": "",
+        "min_price": 9.99,
+        "max_price": 19.99,
+        "badge_color": "blue",
+        "is_sale": true,
+        "short_description": "Purchase fully verified and secure WeChat accounts for personal and business use. Skip the tedious QR code verification process and gain immediate access to global messaging, mini-programs, and seamless communication.",
+        "meta_description": "Looking to buy verified WeChat accounts? Get secure, phone-verified profiles ready for immediate use. Connect with global contacts and businesses seamlessly.",
+        "features": [
+            "Fully Verified Profiles: Authenticated accounts, skipping the complex QR code scan.",
+            "Ready to Use: Instant delivery with full access to login credentials and recovery details.",
+            "High Security Standards: Created using clean IPs to prevent bans or restrictions.",
+            "Global Connectivity: Perfect for business networking and international communication.",
+            "24/7 Dedicated Support: Reliable customer service to assist you with login guidelines."
+        ],
+        "pricing": [
+            "$10 - Option 1",
+            "$20 - Option 2"
+        ],
+        "long_description": "<h2>Why Buy a Verified WeChat Account?</h2><p>WeChat is an essential platform for international communication, business networking, and everyday social interaction, especially when connecting with the Chinese market. However, creating a new account often requires a strict verification process, including the difficult friend-assisted QR code scan. By choosing to <strong>buy a verified WeChat account</strong>, you bypass these hurdles and gain instant access to messaging, mini-programs, and official accounts.</p><h3>The Benefits of an Authenticated Profile</h3><p>Our WeChat profiles are carefully created and phone-verified to ensure they meet the platform's strict security requirements. Whether you need an account for business outreach, testing mini-programs, or staying in touch with international clients, an aged and authenticated profile offers significantly better reliability and a lower risk of sudden restrictions compared to freshly registered ones.</p><h3>Our Commitment to Quality</h3><ul><li><strong>Expertise & Trust:</strong> We specialize in providing premium, ready-to-use digital assets. Every account is rigorously tested to ensure functionality before delivery.</li><li><strong>Authority:</strong> We adhere to the latest security guidelines, ensuring our accounts remain active and robust.</li><li><strong>Reliability:</strong> Upon purchase, you receive full ownership details, allowing you to log in securely and maintain complete privacy.</li></ul><h3>How to Safely Manage Your WeChat Account</h3><p>To keep your new account secure and active, we strongly advise logging in from a consistent, clean IP address and avoiding aggressive adding of contacts during the first few days. Following natural usage patterns is key to account longevity. For more communication tools, explore our full range of <a href=\"/category/mail-account\">Mail & Messaging Accounts</a>.</p><h3>Frequently Asked Questions</h3><p><strong>Q: Do I need a friend to scan a QR code for these accounts?</strong><br>A: No, our accounts are pre-verified, meaning you can log in immediately without any friend-assisted scanning.</p><p><strong>Q: What if I have trouble logging in on my device?</strong><br>A: We provide detailed login instructions and offer a guaranteed replacement if you face any initial login issues.</p>",
+        "related_ids": []
+    },
+    {
         "id": 31,
         "active": true,
-        "title": "Binance accounts verified ready to use",
-        "display_title": "",
+        "title": "Buy Binance accounts",
+        "display_title": " Binance accounts",
         "slug": "binance-accounts-verified-ready-to-use",
         "category": "Bank & Crypto",
         "image": "",
@@ -122,43 +150,49 @@ var products = [
         "max_price": 19.99,
         "badge_color": "blue",
         "is_sale": true,
-        "short_description": "Short description here.",
-        "meta_description": "",
+        "short_description": "Purchase fully KYC verified and secure Binance accounts designed for unrestricted crypto trading. Each account is authenticated with authentic details, ensuring immediate access to deposits, withdrawals, and advanced trading features.",
+        "meta_description": "Looking to buy Binance accounts? We provide fully KYC verified, secure, and ready-to-trade Binance profiles. Start your crypto journey without any limits today.",
         "features": [
-            "Feature 1",
-            "Feature 2"
+            "Fully KYC Verified: Completed identity verification for unrestricted trading limits.",
+            "Ready to Trade: Instant delivery with full access to login credentials and email.",
+            "High Security Standards: Created using secure IPs to ensure account longevity.",
+            "Full Feature Access: Enjoy futures, margin trading, and P2P without restrictions.",
+            "24/7 Dedicated Support: Reliable customer service to assist you at any step."
         ],
         "pricing": [
             "$10 - Option 1",
             "$20 - Option 2"
         ],
-        "long_description": "<p>Detailed description...</p>",
+        "long_description": "<h2>Why Buy Verified Binance Accounts?</h2><p>Binance is one of the world’s leading cryptocurrency exchanges, offering advanced features for trading, staking, and investing. However, the mandatory KYC (Know Your Customer) verification process can be time-consuming and restrictive for many users. By choosing to <strong>buy Binance accounts</strong>, you gain immediate, unrestricted access to a fully verified profile, allowing you to start trading instantly.</p><h3>The Benefits of a KYC-Verified Crypto Profile</h3><p>Our verified Binance accounts are established following strict compliance and security guidelines. Each profile is fully authenticated with legitimate details, granting you the ability to deposit, withdraw, and access high-tier trading features without facing sudden account limitations. Whether you are trading futures or using the P2P marketplace, these accounts are built for serious traders.</p><h3>Our Commitment to Quality</h3><ul><li><strong>Expertise & Trust:</strong> We specialize in providing premium digital assets. Every Binance account undergoes rigorous security checks before delivery to ensure it meets our high standards.</li><li><strong>Authority:</strong> Designed with the latest exchange security protocols in mind, our accounts offer superior durability against random flags or holds.</li><li><strong>Reliability:</strong> Upon purchase, you receive complete ownership of the account, including the linked email, login credentials, and all necessary backup details to maintain your privacy.</li></ul><h3>How to Securely Manage Your Binance Account</h3><p>To ensure the longevity of your newly acquired account, we highly recommend logging in using a consistent and secure IP address. Avoid changing sensitive account details immediately after logging in. For more specialized cryptocurrency solutions, explore our full range of <a href=\"/category/bank-crypto\">Bank & Crypto Accounts</a>.</p><h3>Frequently Asked Questions</h3><p><strong>Q: Can I withdraw funds immediately?</strong><br>A: Yes, our accounts are fully KYC verified, which means your withdrawal limits are unlocked and ready for use.</p><p><strong>Q: Is it safe to use these accounts for P2P trading?</strong><br>A: Absolutely. With full identity verification completed, you can seamlessly participate in Binance's P2P marketplace.</p>",
         "related_ids": []
     },
     {
         "id": 30,
         "active": true,
-        "title": "Cashapp accounts verified ready to use",
+        "title": "Buy Cashapp accounts",
         "display_title": "Cashapp accounts ",
         "slug": "cashapp-accounts-verified-ready-to-testing-use-profiles",
         "category": "Bank & Crypto",
         "image": "",
-        "image_title": "",
+        "image_title": "BCashapp accounts verified ready to use",
         "min_price": 9.99,
         "max_price": 19.99,
         "badge_color": "blue",
         "is_sale": true,
-        "short_description": "Short description here.",
-        "meta_description": "",
+        "short_description": "Purchase fully verified and secure Cashapp accounts designed for seamless peer-to-peer transactions. Each account is authenticated with real details, ensuring immediate access and reliable usage for your financial needs.",
+        "meta_description": "Looking to buy Cashapp accounts? We provide fully verified, secure, and ready-to-use Cash App profiles for seamless transactions. Instant delivery guaranteed.",
         "features": [
-            "Feature 1",
-            "Feature 2"
+            "Fully Verified Profiles: Authenticated with real details to ensure seamless transactions.",
+            "Ready to Use: Instant delivery with full access to login credentials and associated email.",
+            "High Security Standards: Created using unique IPs to prevent holds or bans.",
+            "Transaction Ready: Perfect for sending, receiving, and managing your funds.",
+            "24/7 Dedicated Support: Reliable customer service to assist you at any step."
         ],
         "pricing": [
             "$10 - Option 1",
             "$20 - Option 2"
         ],
-        "long_description": "<p>Detailed description...</p>",
+        "long_description": "<h2>Why Buy Verified Cashapp Accounts?</h2><p>Cash App has revolutionized peer-to-peer payments, making it easier than ever to send, receive, and manage money. However, creating a fully verified account can sometimes be a tedious process. By choosing to <strong>buy Cashapp accounts</strong>, you gain immediate access to fully authenticated profiles that are ready for seamless transactions right out of the box.</p><h3>The Importance of Fully Authenticated Profiles</h3><p>Our verified Cashapp profiles are created following strict security guidelines. Each account is established using unique residential IPs and legitimate details to ensure that you don't face unexpected holds or account limitations. Whether you are using it for personal finance management or testing payment integrations, these accounts offer unparalleled reliability.</p><h3>Our Commitment to Quality</h3><ul><li><strong>Expertise & Trust:</strong> With years of experience providing premium digital assets, we ensure every account undergoes a rigorous quality check before it reaches you.</li><li><strong>Authority:</strong> We follow the latest security protocols, making our accounts highly durable against sudden platform updates.</li><li><strong>Reliability:</strong> Upon purchase, you receive complete ownership, including the linked email, login credentials, and necessary backup details to secure your account.</li></ul><h3>How to Use Your Cashapp Account Safely</h3><p>To maintain the longevity of your account, we highly recommend logging in from a consistent IP address and keeping your transaction volume natural during the first few days. For more specialized financial profiles, you can explore our complete range of <a href=\"/category/bank-crypto\">Bank & Crypto Accounts</a>.</p><h3>Frequently Asked Questions</h3><p><strong>Q: Are these accounts ready for immediate use?</strong><br>A: Yes, every account is pre-verified and ready for instant transactions upon delivery.</p><p><strong>Q: What if I face an issue while logging in?</strong><br>A: We provide a guaranteed replacement for any initial login issues, backed by our 24/7 customer support team.</p>",
         "related_ids": []
     },
     {
