@@ -696,11 +696,10 @@ function generateFullHeader(basePath, products, categories, siteConfig) {
     let desktopNavHtml = `<a href="${getRelativeUrl('/', basePath)}" class="text-slate-600 hover:text-emerald-600 hover:bg-slate-50 rounded-lg transition-colors text-sm font-medium px-4 py-2">Shop</a>`;
     
     categories.forEach(cat => {
-        const validItems = cat.items.map(item => {
+        if (!cat.slug) return;
+        const validItems = (cat.items || []).map(item => {
             return products.find(prod => prod.slug === item || prod.title === item || prod.image_title === item || prod.display_title === item);
         }).filter(p => p !== undefined);
-
-        if (validItems.length === 0) return; // Skip if no products
 
         const catItemsHtml = validItems.map(p => {
             const url = getRelativeUrl(getDynamicUrl('product', p.slug, false), basePath);
@@ -708,14 +707,19 @@ function generateFullHeader(basePath, products, categories, siteConfig) {
             return `<a href="${url}" class="block px-4 py-2.5 text-sm text-slate-600 hover:text-emerald-600 hover:bg-slate-50 transition-colors">${displayText}</a>`;
         }).join('');
 
+        const seeAllUrl = getRelativeUrl(getDynamicUrl('category', cat.slug, false), basePath);
+
         desktopNavHtml += `
             <div class="relative group px-3 py-2">
-                <button class="text-slate-600 group-hover:text-emerald-600 text-sm font-medium flex items-center gap-1 transition-colors">
-                    ${cat.name} <i data-lucide="chevron-down" class="w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity"></i>
-                </button>
+                <a href="${seeAllUrl}" class="text-slate-600 group-hover:text-emerald-600 text-sm font-medium flex items-center gap-1 transition-colors">
+                    ${cat.name} ${validItems.length > 0 ? '<i data-lucide="chevron-down" class="w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity"></i>' : ''}
+                </a>
+                ${validItems.length > 0 ? `
                 <div class="absolute left-0 mt-2 w-56 bg-white border border-slate-200 rounded-xl shadow-2xl py-2 hidden group-hover:block z-50 backdrop-blur-xl max-h-96 overflow-y-auto">
+                    <a href="${seeAllUrl}" class="block px-4 py-2 text-xs font-bold text-emerald-600 hover:bg-slate-50 uppercase tracking-widest border-b border-slate-100">See All ${cat.name}</a>
                     ${catItemsHtml}
                 </div>
+                ` : ''}
             </div>
         `;
     });
@@ -737,11 +741,9 @@ function generateFullHeader(basePath, products, categories, siteConfig) {
     categories.forEach(cat => {
         if (!cat.slug) return;
         const catSlug = cat.slug;
-        const validItems = cat.items.map(item => {
+        const validItems = (cat.items || []).map(item => {
             return products.find(prod => prod.slug === item || prod.title === item || prod.image_title === item || prod.display_title === item);
         }).filter(p => p !== undefined);
-
-        if (validItems.length === 0) return; // Skip if no products
 
         const catItemsHtml = validItems.map(p => {
             const url = getRelativeUrl(getDynamicUrl('product', p.slug, false), basePath);
@@ -749,18 +751,30 @@ function generateFullHeader(basePath, products, categories, siteConfig) {
             return `<a href="${url}" class="block px-4 py-2 text-slate-600 hover:text-emerald-600 hover:bg-slate-50 rounded-lg transition-colors text-sm">${displayText}</a>`;
         }).join('');
 
-        mobileNavHtml += `
-            <div class="mb-2">
-                <button class="mobile-cat-toggle w-full flex items-center justify-between px-4 py-3 text-slate-700 hover:text-emerald-600 hover:bg-slate-50 rounded-xl transition-all" data-cat="${catSlug}">
-                    <span class="font-bold text-sm tracking-wide uppercase">${cat.name}</span>
-                    <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
-                </button>
-                <div id="mobile-items-${catSlug}" class="hidden space-y-1 mt-1 ml-4 border-l border-slate-200 pl-2">
-                    <a href="${getRelativeUrl(getDynamicUrl('category', catSlug, false), basePath)}" class="block px-4 py-2 text-xs font-bold text-emerald-600 hover:text-emerald-500 uppercase tracking-widest">See All ${cat.name}</a>
-                    ${catItemsHtml}
+        const seeAllUrl = getRelativeUrl(getDynamicUrl('category', catSlug, false), basePath);
+
+        if (validItems.length > 0) {
+            mobileNavHtml += `
+                <div class="mb-2">
+                    <button class="mobile-cat-toggle w-full flex items-center justify-between px-4 py-3 text-slate-700 hover:text-emerald-600 hover:bg-slate-50 rounded-xl transition-all" data-cat="${catSlug}">
+                        <span class="font-bold text-sm tracking-wide uppercase">${cat.name}</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                    </button>
+                    <div id="mobile-items-${catSlug}" class="hidden space-y-1 mt-1 ml-4 border-l border-slate-200 pl-2">
+                        <a href="${seeAllUrl}" class="block px-4 py-2 text-xs font-bold text-emerald-600 hover:text-emerald-500 uppercase tracking-widest">See All ${cat.name}</a>
+                        ${catItemsHtml}
+                    </div>
                 </div>
-            </div>
-        `;
+            `;
+        } else {
+            mobileNavHtml += `
+                <div class="mb-2">
+                    <a href="${seeAllUrl}" class="w-full flex items-center justify-between px-4 py-3 text-slate-700 hover:text-emerald-600 hover:bg-slate-50 rounded-xl transition-all">
+                        <span class="font-bold text-sm tracking-wide uppercase">${cat.name}</span>
+                    </a>
+                </div>
+            `;
+        }
     });
 
     header = header.replace(/<nav[^>]*id="desktop-nav">[\s\S]*?<\/nav>/, `<nav class="desktop-nav-container items-center gap-1" id="desktop-nav">${desktopNavHtml}</nav>`);

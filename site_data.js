@@ -1,4 +1,4 @@
-// site_data.js
+﻿// site_data.js
 
 // --- Site Configuration (CMS Data) ---
 var siteConfig = {
@@ -13,8 +13,8 @@ var siteConfig = {
     "heroButtonLink": "#products-section",
     "supportEmail": "",
     "analyticsId": "",
-    "whatsapp": "+1 (548) 580-1949",
-    "telegram": "pvausaworld7",
+    "whatsapp": "+1 (678) 725-0845",
+    "telegram": "pvausaworld",
     "themeColor": "#0B1120",
     "popupTitle": "",
     "popupMessage": "",
@@ -44,10 +44,8 @@ var categories = [
         "content": "<p>\n            </p><h2 class=\"text-3xl font-bold text-white mb-6\">Boost Your Business with Verified Google Services</h2><p>\n            </p><p class=\"text-slate-300 mb-4 text-lg\">\n                In today's digital landscape, Google dominates search and discovery. Having a strong presence on Google is not just an option; it's a necessity. \n                Our **Google Services** category offers a wide range of solutions designed to enhance your visibility, credibility, and operational efficiency.\n            </p><p>\n            </p><p class=\"text-slate-300 mb-8 text-lg\">\n                Whether you need to improve your local SEO with **Google Reviews**, manage multiple campaigns with **Google Ads Accounts**, or secure your communications with **Google Voice**, we have you covered. \n                All our accounts and services are 100% verified, safe, and delivered instantly.\n            </p><p>\n\n            </p><h3 class=\"text-2xl font-bold text-white mb-4\">Why Invest in Google Services?</h3><p>\n            </p><p><br></p><p>\n\n            </p><h3 class=\"text-2xl font-bold text-white mb-4\">Our Top Google Products</h3><p>\n            </p><p><br></p><p>\n\n            </p><h3 class=\"text-2xl font-bold text-white mb-4\">Buyer's Guide: How to Choose?</h3><p>\n            </p><p class=\"text-slate-300 mb-4\">\n                When selecting a service, consider your immediate business goals. If you are a local business, prioritize **Google Maps Reviews**. \n                For digital marketers, **Old Gmail Accounts** and **Google Voice** are essential tools for outreach and account management.\n            </p><p>\n            </p><p class=\"text-slate-300\">\n                At **pvausaworld**, we ensure every product meets the highest standards of quality and security. Browse our selection below and take your Google presence to the next level.\n            </p><p>\n        </p>",
         "items": [
             "Old Gmail Account",
-            "Buy GitHub Account",
-            "Buy Old Gmail Accounts",
-            "Buy Edu Mail Accounts",
-            "WeChat Account"
+            "Edu Mail Accounts",
+            "Old Gmail Accounts"
         ]
     },
     {
@@ -57,9 +55,10 @@ var categories = [
         "content": "<p><br></p>",
         "items": [
             "Cash App Accounts",
-            "Buy Verified Wise Accounts",
             " Binance accounts",
-            "Cashapp accounts "
+            "Cashapp accounts ",
+            "WeChat Account",
+            "Verified Wise Accounts"
         ]
     },
     {
@@ -70,7 +69,7 @@ var categories = [
         "items": [
             "Google 5 Star Reviews",
             "Trustpilot Reviews",
-            "Buy Amazon Reviews"
+            "Amazon Reviews"
         ]
     },
     {
@@ -78,7 +77,9 @@ var categories = [
         "slug": "social-account",
         "description": "",
         "content": "<p><br></p>",
-        "items": []
+        "items": [
+            "GitHub Account"
+        ]
     }
 ];
 
@@ -114,7 +115,7 @@ var products = [
         "title": "Buy Verified WeChat Account",
         "display_title": "WeChat Account",
         "slug": "safe-and-relaible-wechat-account-for-testing",
-        "category": "Mail account",
+        "category": "Bank & Crypto",
         "image": "",
         "image_title": "",
         "min_price": 9.99,
@@ -134,7 +135,7 @@ var products = [
             "$10 - Option 1",
             "$20 - Option 2"
         ],
-        "long_description": "<h2>Why Buy a Verified WeChat Account?</h2><p>WeChat is an essential platform for international communication, business networking, and everyday social interaction, especially when connecting with the Chinese market. However, creating a new account often requires a strict verification process, including the difficult friend-assisted QR code scan. By choosing to <strong>buy a verified WeChat account</strong>, you bypass these hurdles and gain instant access to messaging, mini-programs, and official accounts.</p><h3>The Benefits of an Authenticated Profile</h3><p>Our WeChat profiles are carefully created and phone-verified to ensure they meet the platform's strict security requirements. Whether you need an account for business outreach, testing mini-programs, or staying in touch with international clients, an aged and authenticated profile offers significantly better reliability and a lower risk of sudden restrictions compared to freshly registered ones.</p><h3>Our Commitment to Quality</h3><ul><li><strong>Expertise & Trust:</strong> We specialize in providing premium, ready-to-use digital assets. Every account is rigorously tested to ensure functionality before delivery.</li><li><strong>Authority:</strong> We adhere to the latest security guidelines, ensuring our accounts remain active and robust.</li><li><strong>Reliability:</strong> Upon purchase, you receive full ownership details, allowing you to log in securely and maintain complete privacy.</li></ul><h3>How to Safely Manage Your WeChat Account</h3><p>To keep your new account secure and active, we strongly advise logging in from a consistent, clean IP address and avoiding aggressive adding of contacts during the first few days. Following natural usage patterns is key to account longevity. For more communication tools, explore our full range of <a href=\"/category/mail-account\">Mail & Messaging Accounts</a>.</p><h3>Frequently Asked Questions</h3><p><strong>Q: Do I need a friend to scan a QR code for these accounts?</strong><br>A: No, our accounts are pre-verified, meaning you can log in immediately without any friend-assisted scanning.</p><p><strong>Q: What if I have trouble logging in on my device?</strong><br>A: We provide detailed login instructions and offer a guaranteed replacement if you face any initial login issues.</p>",
+        "long_description": "<h2>Why Buy a Verified WeChat Account?</h2><p>WeChat is an essential platform for international communication, business networking, and everyday social interaction, especially when connecting with the Chinese market. However, creating a new account often requires a strict verification process, including the difficult friend-assisted QR code scan. By choosing to <strong>buy a verified WeChat account</strong>, you bypass these hurdles and gain instant access to messaging, mini-programs, and official accounts.</p><h3>The Benefits of an Authenticated Profile</h3><p>Our WeChat profiles are carefully created and phone-verified to ensure they meet the platform's strict security requirements. Whether you need an account for business outreach, testing mini-programs, or staying in touch with international clients, an aged and authenticated profile offers significantly better reliability and a lower risk of sudden restrictions compared to freshly registered ones.</p><h3>Our Commitment to Quality</h3><ul><li><strong>Expertise &amp; Trust:</strong> We specialize in providing premium, ready-to-use digital assets. Every account is rigorously tested to ensure functionality before delivery.</li><li><strong>Authority:</strong> We adhere to the latest security guidelines, ensuring our accounts remain active and robust.</li><li><strong>Reliability:</strong> Upon purchase, you receive full ownership details, allowing you to log in securely and maintain complete privacy.</li></ul><h3>How to Safely Manage Your WeChat Account</h3><p>To keep your new account secure and active, we strongly advise logging in from a consistent, clean IP address and avoiding aggressive adding of contacts during the first few days. Following natural usage patterns is key to account longevity. For more communication tools, explore our full range of <a href=\"/category/mail-account\" target=\"_blank\">Mail &amp; Messaging Accounts</a>.</p><h3>Frequently Asked Questions</h3><p><strong>Q: Do I need a friend to scan a QR code for these accounts?</strong></p><p>A: No, our accounts are pre-verified, meaning you can log in immediately without any friend-assisted scanning.</p><p><strong>Q: What if I have trouble logging in on my device?</strong></p><p>A: We provide detailed login instructions and offer a guaranteed replacement if you face any initial login issues.</p>",
         "related_ids": []
     },
     {
@@ -199,7 +200,7 @@ var products = [
         "id": 29,
         "active": true,
         "title": "Buy Edu Mail Accounts",
-        "display_title": "",
+        "display_title": "Edu Mail Accounts",
         "slug": "edu-mail-accounts-trusted-ready-for-immediate-use",
         "category": "Mail account",
         "image": "",
@@ -221,16 +222,16 @@ var products = [
             "$10 - Option 1",
             "$20 - Option 2"
         ],
-        "long_description": "<h2>Why Buy Edu Mail Accounts?</h2><p>An educational email address (.edu) is more than just a communication tool; it is a gateway to hundreds of premium student discounts and free software services. By choosing to <strong>buy Edu mail accounts</strong>, professionals and students alike can significantly reduce their digital expenses and gain access to top-tier academic resources.</p><h3>Unlocking Premium Benefits</h3><p>Our verified .edu emails are sourced securely and are recognized by major platforms. Whether you are looking for discounts on Amazon Prime, Spotify, Apple Music, or need access to the <strong>GitHub Student Developer Pack</strong> and Microsoft Office 365, these accounts deliver unmatched value. You get to enjoy all the perks of being a student without the heavy tuition fees.</p><h3>Why Choose Us?</h3><ul><li><strong>Expertise & Trust:</strong> We specialize in providing authentic digital assets with a proven track record. Each Edu email is thoroughly tested to ensure it works seamlessly across top platforms.</li><li><strong>Authority:</strong> Our accounts have a high success rate for redeeming student offers, making us a trusted provider in the industry.</li><li><strong>Reliability:</strong> We prioritize your security. Every account comes with a fresh password and recovery options to keep your access safe.</li></ul><h3>How to Maximize Your Edu Mail</h3><p>To get the most out of your purchase, we recommend signing up for your desired services immediately upon receiving your login details. Be sure to check our other premium <a href=\"/category/mail-account\">Mail Accounts</a> for more options. Following best practices ensures your account remains active and your discounts stay valid.</p><h3>Frequently Asked Questions</h3><p><strong>Q: Will I get access to Google Drive or Office 365?</strong><br>A: Yes, many of our .edu emails grant access to essential academic software suites like Office 365 and educational cloud storage benefits.</p><p><strong>Q: How fast is the delivery?</strong><br>A: Delivery is almost instant upon completing your purchase. You will receive all necessary credentials securely.</p>",
+        "long_description": "<h2>Why Buy Edu Mail Accounts?</h2><p>An educational email address (.edu) is more than just a communication tool; it is a gateway to hundreds of premium student discounts and free software services. By choosing to <strong>buy Edu mail accounts</strong>, professionals and students alike can significantly reduce their digital expenses and gain access to top-tier academic resources.</p><h3>Unlocking Premium Benefits</h3><p>Our verified .edu emails are sourced securely and are recognized by major platforms. Whether you are looking for discounts on Amazon Prime, Spotify, Apple Music, or need access to the <strong>GitHub Student Developer Pack</strong> and Microsoft Office 365, these accounts deliver unmatched value. You get to enjoy all the perks of being a student without the heavy tuition fees.</p><h3>Why Choose Us?</h3><ul><li><strong>Expertise &amp; Trust:</strong> We specialize in providing authentic digital assets with a proven track record. Each Edu email is thoroughly tested to ensure it works seamlessly across top platforms.</li><li><strong>Authority:</strong> Our accounts have a high success rate for redeeming student offers, making us a trusted provider in the industry.</li><li><strong>Reliability:</strong> We prioritize your security. Every account comes with a fresh password and recovery options to keep your access safe.</li></ul><h3>How to Maximize Your Edu Mail</h3><p>To get the most out of your purchase, we recommend signing up for your desired services immediately upon receiving your login details. Be sure to check our other premium <a href=\"/category/mail-account\" target=\"_blank\">Mail Accounts</a> for more options. Following best practices ensures your account remains active and your discounts stay valid.</p><h3>Frequently Asked Questions</h3><p><strong>Q: Will I get access to Google Drive or Office 365?</strong></p><p>A: Yes, many of our .edu emails grant access to essential academic software suites like Office 365 and educational cloud storage benefits.</p><p><strong>Q: How fast is the delivery?</strong></p><p>A: Delivery is almost instant upon completing your purchase. You will receive all necessary credentials securely.</p>",
         "related_ids": []
     },
     {
         "id": 28,
         "active": true,
         "title": "Buy Old Gmail Accounts",
-        "display_title": "",
+        "display_title": "Old Gmail Accounts",
         "slug": "old-gmail-account-aged-trusted-ready-for-immediate-use",
-        "category": "Google",
+        "category": "Mail account",
         "image": "",
         "image_title": "Buy Old Gmail Accounts",
         "min_price": 9.99,
@@ -250,16 +251,16 @@ var products = [
             "$10 - Option 1",
             "$20 - Option 2"
         ],
-        "long_description": "<h2>Why Buy Old Gmail Accounts?</h2><p>When it comes to digital marketing, business communications, or expanding your online presence, having reliable email accounts is crucial. Purchasing <strong>aged Gmail accounts</strong> provides an immediate advantage because older accounts inherently carry higher trust scores and authority with Google's algorithms compared to freshly created ones.</p><h3>The Importance of Aged and Phone Verified (PVA) Accounts</h3><p>Our old Gmail accounts are 100% Phone Verified (PVA) and established using unique residential IPs. This ensures they meet the highest standards of quality, reducing the likelihood of bans or restrictions. Whether you are running Google Ads, managing multiple social media profiles, or conducting outreach campaigns, these accounts are engineered for durability.</p><h3>Key Benefits for Your Business</h3><ul><li><strong>Expertise & Trust:</strong> We have years of experience in providing secure digital assets. Each account undergoes rigorous quality assurance before delivery.</li><li><strong>Authority:</strong> Aged accounts are less likely to trigger spam filters, giving your emails a higher inbox delivery rate.</li><li><strong>Security:</strong> You receive complete ownership, including recovery emails and passwords, ensuring your data remains private and secure.</li></ul><h3>How to Use Your Aged Gmail Accounts Effectively</h3><p>To maintain the health of your accounts, we recommend logging in using consistent IP addresses and avoiding aggressive spamming activities. For further account management strategies, check out our full range of <a href=\"/category/google\">Google Accounts</a> for specialized needs.</p><h3>Frequently Asked Questions</h3><p><strong>Q: How old are these accounts?</strong><br>A: We offer accounts ranging from 1 to 5+ years old, fully aged and warmed up.</p><p><strong>Q: Are these accounts safe from suspension?</strong><br>A: While no account is entirely immune to Google's policy changes, our aged PVA accounts have a significantly higher survival rate when used following standard guidelines.</p>",
+        "long_description": "<h2>Why Buy Old Gmail Accounts?</h2><p>When it comes to digital marketing, business communications, or expanding your online presence, having reliable email accounts is crucial. Purchasing <strong>aged Gmail accounts</strong> provides an immediate advantage because older accounts inherently carry higher trust scores and authority with Google's algorithms compared to freshly created ones.</p><h3>The Importance of Aged and Phone Verified (PVA) Accounts</h3><p>Our old Gmail accounts are 100% Phone Verified (PVA) and established using unique residential IPs. This ensures they meet the highest standards of quality, reducing the likelihood of bans or restrictions. Whether you are running Google Ads, managing multiple social media profiles, or conducting outreach campaigns, these accounts are engineered for durability.</p><h3>Key Benefits for Your Business</h3><ul><li><strong>Expertise &amp; Trust:</strong> We have years of experience in providing secure digital assets. Each account undergoes rigorous quality assurance before delivery.</li><li><strong>Authority:</strong> Aged accounts are less likely to trigger spam filters, giving your emails a higher inbox delivery rate.</li><li><strong>Security:</strong> You receive complete ownership, including recovery emails and passwords, ensuring your data remains private and secure.</li></ul><h3>How to Use Your Aged Gmail Accounts Effectively</h3><p>To maintain the health of your accounts, we recommend logging in using consistent IP addresses and avoiding aggressive spamming activities. For further account management strategies, check out our full range of <a href=\"/category/google\" target=\"_blank\">Google Accounts</a> for specialized needs.</p><h3>Frequently Asked Questions</h3><p><strong>Q: How old are these accounts?</strong></p><p>A: We offer accounts ranging from 1 to 5+ years old, fully aged and warmed up.</p><p><strong>Q: Are these accounts safe from suspension?</strong></p><p>A: While no account is entirely immune to Google's policy changes, our aged PVA accounts have a significantly higher survival rate when used following standard guidelines.</p>",
         "related_ids": []
     },
     {
         "id": 27,
         "active": true,
         "title": "Buy GitHub Account",
-        "display_title": "",
+        "display_title": "GitHub Account",
         "slug": "safe-stable-github-account",
-        "category": "Google",
+        "category": "Social account",
         "image": "/images/github_account.webp",
         "image_title": "Buy GitHub Account",
         "min_price": 9.99,
@@ -283,7 +284,7 @@ var products = [
         "id": 26,
         "active": true,
         "title": "Buy Verified Wise Accounts",
-        "display_title": "",
+        "display_title": "Verified Wise Accounts",
         "slug": "safe-stable-wise-accounts",
         "category": "Bank & Crypto",
         "image": "/images/wise_accounts.webp",
@@ -309,7 +310,7 @@ var products = [
         "id": 25,
         "active": true,
         "title": "Buy Amazon Reviews",
-        "display_title": "",
+        "display_title": "Amazon Reviews",
         "slug": "safe-stable-amazon-reviews",
         "category": "Reviews",
         "image": "/images/amazon_reviews.webp",
